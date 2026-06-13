@@ -876,15 +876,19 @@ const transferCount =
     >
       <div
         style={{
-          display: "flex",
+            display: "flex",
           justifyContent: "space-between",
-          alignItems: "center",
+          alignItems: "flex-start",
+          flexWrap: "wrap",
+          gap: "15px",
           marginBottom: "50px",
         }}
       >
-        <h1
+          <h1
           style={{
             margin: 0,
+            fontSize: "2rem",
+            lineHeight: "1.1",
           }}
         >
           PERSONAL FINANCE MANAGER

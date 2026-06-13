@@ -13,7 +13,7 @@ function Dashboard({
       style={{
         display: "grid",
         gridTemplateColumns:
-          "repeat(auto-fit,minmax(220px,1fr))",
+          "repeat(auto-fit,minmax(150px,1fr))",
         gap: "15px",
         marginBottom: "30px",
       }}
@@ -25,8 +25,15 @@ function Dashboard({
           borderRadius: "12px",
         }}
       >
-        <h3>Total Balance</h3>
-        <h2>KES {totalBalance}</h2>
+        <h3>💰 Total Balance</h3>
+        <h2
+            style={{
+              fontSize: "1.5rem",
+              margin: "10px 0 0 0",
+            }}
+          >
+            KES {totalBalance.toLocaleString()}
+          </h2>
       </div>
 
       <div
@@ -36,8 +43,15 @@ function Dashboard({
           borderRadius: "12px",
         }}
       >
-        <h3>M-Pesa</h3>
-        <h2>KES {mpesaBalance}</h2>
+        <h3>📱 M-Pesa</h3>
+            <h2
+            style={{
+              fontSize: "1.5rem",
+              margin: "10px 0 0 0",
+            }}
+          >
+            KES {mpesaBalance.toLocaleString()}
+          </h2>
       </div>
 
       <div
@@ -47,9 +61,16 @@ function Dashboard({
           borderRadius: "12px",
         }}
       >
-        <h3>Equity</h3>
-        <h2>KES {equityBalance}</h2>
-      </div>
+        <h3>🏦 Equity</h3>
+        <h2
+          style={{
+            fontSize: "1.5rem",
+            margin: "10px 0 0 0",
+          }}
+        >
+          KES {equityBalance.toLocaleString()}
+        </h2>
+              </div>
 
       <div
         style={{
@@ -58,8 +79,15 @@ function Dashboard({
           borderRadius: "12px",
         }}
       >
-        <h3>Cash</h3>
-        <h2>KES {cashBalance}</h2>
+        <h3>💵 Cash</h3>
+          <h2
+            style={{
+              fontSize: "1.5rem",
+              margin: "10px 0 0 0",
+            }}
+          >
+            KES {cashBalance.toLocaleString()}
+          </h2>
       </div>
     </div>
   );
